@@ -1,0 +1,278 @@
+/* section header  */
+
+nav {
+  display:none;
+  @media (min-width: 950px) {
+    display:block;
+    padding-top: 6px
+  }
+
+}
+
+
+.headerPart1 {
+  display: flex;
+  position:relative;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1352px;
+  @media(min-width: 950px){
+    align-items: center;
+  }
+  
+}
+
+header {
+  width: 100%;
+  max-width: 1352px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left:15px;
+  padding-right: 15px; 
+  opacity: 1;
+  z-index: 1;
+  @media (min-width:407px) {
+    height: auto;
+    margin-bottom: 2px;
+  }
+  @media (min-width:1050px) {
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+}
+
+.headerPart2{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  @media(min-width:350px){
+    font-size: 15px;
+  }
+}
+
+.logo{
+  text-align: left;
+  font-family: 'StayPuft'; 
+  height: 87px;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  color: $logoColor;
+  opacity: 1;
+  width: 147px;
+  line-height: 1.2;
+  @media (min-width:407px) {
+    width:auto;
+    height: auto
+  }
+}
+
+.hamburger {
+  display:block;
+  margin-top: 3px;
+  @media(min-width: 950px) {
+    display: none;
+  }
+}
+
+.hamburgerStraps {
+  position: relative;
+  height: 30px;
+  width: 46px;
+  cursor:pointer
+}
+
+
+.hamburgerStrap {
+  width: 46px;
+  height:8px;
+  background:$logoColor;
+  display:block;
+ 
+}
+
+.hamburgerStrap:nth-child(3) {
+  left: 0;
+  top: 11px;
+  z-index: 3;
+  background:$logoColor;
+  position: absolute;
+}
+
+.hamburgerStrap:nth-child(1){
+  top:0;
+  left:0;
+  position: absolute;
+  transition: .25s ease-in-out;
+}
+
+.hamburgerStrap.showCross:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburgerStrap:nth-child(2){
+  top:11px;
+  left:0;
+  position: absolute;
+}
+
+.hamburgerStrap.showCross:nth-child(2) {
+  transform: rotate(45deg);
+  transition: .5s ease-in-out;
+  
+}
+
+.hamburgerStrap.showCross:nth-child(3) {
+  transform: rotate(-45deg);
+  transition: .5s ease-in-out;
+}
+
+.hamburgerStrap:nth-child(4) {
+  top:22px;
+  left:0;
+  position: absolute;
+  transition: .25s ease-in-out;
+}
+
+.hamburgerStrap.showCross:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+
+}
+
+.navList2 li {
+  width: 100%;
+  padding: 0 14px;
+  float: left;
+
+}
+
+.navList2 {
+  display:none;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  top: 115px;
+  z-index: 2;
+  background-color: #03a9f4d6;
+ 
+  @media(min-width:407px){
+    top:77px;
+    right: 0;
+  }
+}
+
+.navList2.showList {
+  animation: menuAnimation 0.4s;
+  @media(min-width: 407px) {
+    animation: menuAnimation2 0.4s;
+  }
+
+}
+
+@keyframes menuAnimation {
+  0% {
+    right: -114%;
+    top: -236%;
+    opacity:0.4
+   
+  }
+ 
+  100% {
+    top: 115px;
+    opacity:0.6;
+    right: 0
+  
+  }
+}
+
+
+@keyframes menuAnimation2 {
+  0% {
+    top: -354%;
+    right: -113%;
+  }
+  100% {
+    top: 77px;
+    opacity:0.6;
+    right: 0
+  }
+}
+
+
+.navList2 .navListElement:hover {
+  cursor: pointer;
+  background: #2748b3a3;
+
+}
+
+.navListElement{
+  display: inline;
+  padding-left: 24px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: 1;
+  @media (min-width:1050px){
+    padding-left:0
+  }
+  @media (min-width:1100px){
+    margin-left:20px
+  }
+  @media (min-width:1200px){
+    margin-left:45px
+  }
+}
+
+
+.nav_a{
+  text-decoration: none;
+  font-size: 1rem;
+  color:black;
+  position: relative;
+  padding-bottom: 5px;
+  vertical-align: center;
+  font-weight: 400;
+  @media(min-width:950px) {
+    font-size: 1.1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media(min-width:1300px) {
+    font-size: 1.2rem;
+  }
+}
+
+.navList2 .nav_a {
+  display: block;
+  padding: 20px 0;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.nav_a:after{
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2.9px;
+  background: $logoColor;
+  content: '';
+  text-align: center;
+  transition: width 0.3s ease, left 0.3s ease
+
+}
+
+.nav_a:hover:after{
+  @media(min-width:950px){
+    width:100%;
+    left:0
+  }
+}
+

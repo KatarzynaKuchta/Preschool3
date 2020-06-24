@@ -1,0 +1,73 @@
+
+// section1 - Animals picture
+
+.section1 {
+  position:relative;
+  width:100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.animals{
+  height: 346px;
+  object-fit: fill;
+  object-position: bottom;
+  content: url('../images/animals.jpg');
+  @media(min-width: 430px) {
+    height: 463px;
+  }
+
+  @media (min-width:540px) {
+    height: 461px;
+  }
+
+  @media (min-width:570px) {
+    height: auto;
+    width:100%
+  }
+
+  @media (min-width:600px) {
+    padding-left:15px;
+    padding-right: 15px;
+  }
+
+  @media(min-width:1000px) {
+    height:750px;
+    object-fit: cover
+  }
+
+  @media(min-width:1050px) {
+   
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+  
+}
+
+.contribution {
+  bottom: 0px;
+  position: absolute;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-shadow: 0 0 10px black;
+  right:5px;
+
+  @media (min-width:600px) {
+    right:20px;
+  }
+
+  @media (min-width:930px) {
+    bottom: 0.5%;
+  }
+
+  @media(min-width:1050px){
+    right: 115px;
+  }
+
+}

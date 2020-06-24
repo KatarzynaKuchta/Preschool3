@@ -1,0 +1,156 @@
+
+// Button back to top
+
+
+.backToTopBtn{
+  @media(min-width:1360px) {
+    position:absolute;
+    left: 50%;
+    bottom:20px;
+    margin-left: 762px;
+    opacity: 0
+  }
+
+}
+
+.showButton2 {
+  @media(min-width:1360px) {
+    animation: showBtnAnimation2 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes showBtnAnimation2 {
+  0% {
+    margin-left: 762px;
+    opacity:0;
+  }
+
+  100% {
+    margin-left: 594px;
+    opacity:0.7
+  }
+}
+
+.hideButton2 {
+  @media(min-width:1360px) {
+    animation: hideBtnAnimation2 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+
+@keyframes hideBtnAnimation2 {
+  0% {
+    margin-left: 594px;
+    opacity: 0.7
+  }
+
+  100% {
+    margin-left: 762px;
+    opacity:0
+  }
+}
+
+
+.showButton {
+  @media(max-width: 1360px) {
+    animation: showBtnAnimation 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+  @media(min-width: 1360px) {
+    animation: showBtnAnimation3 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+  
+}
+
+@keyframes showBtnAnimation {
+  0% {
+    right: -63px;
+    bottom:7px;
+    opacity: 0;
+  }
+  100% {  
+    right: 9px;
+    bottom:7px;
+    opacity:0.7
+  }
+}
+
+@keyframes showBtnAnimation3 {
+  0% {
+    opacity:0
+  }
+  100% {  
+    opacity: 0.7
+  }
+}
+
+
+.hideButton {
+  @media(max-width: 1360px) {
+    animation: hideBtnAnimation 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+  @media(min-width: 1520px) {
+    animation: hideBtnAnimation3 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+ 
+}
+
+
+@keyframes hideBtnAnimation {
+  from {
+    right: 0px;
+    bottom:7px;
+    opacity: 0.7
+  }
+
+  to {
+    right: -63px;
+    bottom:7px;
+    opacity:0
+  }
+}
+
+@keyframes hideBtnAnimation3 {
+  from {
+    opacity: 0.7
+  }
+
+  to {
+    opacity:0
+  }
+}
+
+.upArrow {
+  width:63px;
+  height:63px;
+  background: #9E9E9E;
+  fill: white;
+  cursor: pointer;
+  position: fixed;
+  bottom:10px;
+  right: 10px;
+  z-index:4;
+  opacity:0;
+  @media(min-width:650px) {
+    width:70px;
+    height:70px
+  }
+  @media(min-width: 1360px){
+    bottom: 10px;
+    right: auto;
+    width:73px;
+    height:73px
+  }
+  
+}
+
+.upArrow:hover {
+  fill: #616161;
+  opacity:1
+
+}

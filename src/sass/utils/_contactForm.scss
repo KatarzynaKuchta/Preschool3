@@ -1,0 +1,214 @@
+// section4 - contact form
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  @media (min-width:670px){
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+// form
+
+.contactPart {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 70px;
+  align-items: center;
+  @media(min-width: 670px){
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between
+
+  }
+  @media(min-width: 1000px) {
+    justify-content: space-evenly;
+  }
+}
+
+.section4 label,.section4 input,.section4 textarea {
+  display:block;
+  width: 90%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem; 
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-weight: 400;     
+  
+}
+
+.section4 input,.section4 textarea{
+  box-shadow: 0px 1px 4px #9E9E9E;
+  border: none;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  width:100%;
+  padding-left: 5px;
+  padding-right: 4px;
+  background: #9da2b608;
+
+}
+
+.section4 input {
+  height:42px;
+
+}
+
+.section4 label{
+  font-size: 1rem;
+  font-weight: 500; 
+  
+}
+
+.section4 textarea {
+  outline:none;
+  padding-top: 15px;
+  @media (min-width:670px){
+    height: 171px;
+    outline: none;
+  }
+}
+
+.inputArea{
+  height: 35px;
+  margin-bottom: 2px;
+  font-family: 'Open-sans';
+  border: 1px solid black;
+}
+
+.inputArea:-webkit-autofill{
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.inputArea:focus {
+  outline: none;
+}
+
+.errorField {
+  width: 100%;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  color: #ec407a;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.info{
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 21px;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-shadow: 1px 1px 10px white;
+  font-weight: 500;
+  height: 547px;
+  font-size: 1.1rem;    
+  @media(min-width: 338px) {
+    height: 529px
+  }
+  @media(min-width: 550px) {
+    height: 622px;
+    font-size: 1.3rem
+  }
+  @media(min-width: 670px) {
+    font-size: 1.2rem;
+    padding-left:0;  
+    margin-bottom:0;   
+    height: 541px;
+    width: 50%
+  }
+  @media(min-width: 1000px){
+    width: 485px;
+    font-size: 1.2rem;
+  }
+
+  
+}
+
+.elephant{
+  width:100%; 
+  height:100%;
+  background-image: url('../images/girl.jpg');
+  background-repeat: no-repeat;
+  background-size: 261px; 
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  @media (min-width:550px) {
+    background-size: 333px;
+    width:106%
+  }
+  @media(min-width:670px) {
+    margin-top:14px;
+    width:100%;
+    background-size: contain;
+  }
+  
+}
+
+.contributionElephant{
+  right: auto;
+  color:black;
+  text-shadow: none;
+  bottom:-9px;
+  font-size: 13px;
+}
+
+.nameInContact {
+  font-size: 1.4rem; 
+  font-weight: 600;
+}
+
+.nameInContactP2, .address{
+  margin-bottom: 17px;
+  @media (min-width:670px){
+    margin-bottom: 21px;
+  }
+  
+}
+
+.section4 form{
+  line-height: 1.3;
+  font-size: 1rem;
+  width:100%;
+  display:flex; 
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+  @media(min-width:450px){
+    width: 90%
+  }
+  @media(min-width: 550px) {
+    width: 460px
+  }
+  @media(min-width: 670px) {
+    width:50%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media(min-width: 1000px) {
+    width:409px;
+  }
+}
+
+.send{
+  height: 46px;
+  margin-top: 31px;
+  @media(min-width: 1000px) {
+    height: 48px;
+  }
+
+}
